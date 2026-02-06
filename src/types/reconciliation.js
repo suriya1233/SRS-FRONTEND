@@ -1,4 +1,4 @@
-// Mock data generators
+
 export const generateMockSystemRecords = (count) => {
     const records = [];
     const categories = ['Office Supplies', 'Software', 'Travel', 'Marketing', 'Equipment'];

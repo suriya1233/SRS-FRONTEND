@@ -83,5 +83,10 @@ export const settingsAPI = {
     updateUser: (id, updates) => api.put(`/settings/users/${id}`, updates),
     deleteUser: (id) => api.delete(`/settings/users/${id}`)
 };
+axios.post(
+  "https://srs-1-kpb3.onrender.com/api/auth/login",
+  data
+);
+
 
 export default api;
