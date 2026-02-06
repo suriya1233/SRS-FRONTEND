@@ -7,6 +7,9 @@ const api = axios.create({
         'Content-Type': 'application/json'
     }
 });
+const response = await authAPI.login(credentials);
+console.log(response.data); // ✅ OK
+
 
 // Add auth token to requests
 api.interceptors.request.use(
