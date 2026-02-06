@@ -208,5 +208,9 @@ const App = () => {
         </AuthProvider>
     );
 };
+<AuthProvider>
+    <App />
+</AuthProvider>
+
 
 export default App;

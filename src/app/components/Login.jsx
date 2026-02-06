@@ -21,7 +21,10 @@ export const Login = () => {
 
         try {
             await login(email, password);
+            // redirect after successful login
+            window.location.href = '/dashboard';
         } catch (err) {
+            console.error(err);
             setError('Invalid email or password');
         } finally {
             setLoading(false);
@@ -79,13 +82,6 @@ export const Login = () => {
                         <Button type="submit" className="w-full" disabled={loading}>
                             {loading ? 'Signing in...' : 'Sign In'}
                         </Button>
-
-                        <div className="">
-                            <p className=""></p>
-                            <div className="">
-                              
-                            </div>
-                        </div>
                     </form>
                 </CardContent>
             </Card>
